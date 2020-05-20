@@ -1,12 +1,10 @@
-==================
-Reset Synchization
-==================
+Reset Synchronization
+.....................
 
-
-| The best design practice is to use a 2FF Synronizer for aynchronous reset which can get rid of recovery issues:
+| The best design practice is to use a 2FF Synchronizer for aynchronous reset which can get rid of recovery issues:
 | Ref: Asynchronous & Synchronous ResetDesign Techniques - Part Deux- Clifford E. Cummings. Boston 2003
 
-Veriog:
+*Veriog*
 
 .. code-block:: verilog
 
@@ -22,7 +20,7 @@ Veriog:
 
   endmodule
 
-VHDL:
+*VHDL*
 
 .. code-block:: vhdl
 
@@ -53,9 +51,8 @@ VHDL:
 
   end rtl;
 
-====================================
 Test Benches - Reset Race Conditions
-====================================
+....................................
 
 | Time-0 reset deassertion can cause race conditions in simulations. Use the best practice given below to avoid it.
 | Ref: Asynchronous & Synchronous ResetDesign Techniques - Part Deux- Clifford E. Cummings. Boston 2003
